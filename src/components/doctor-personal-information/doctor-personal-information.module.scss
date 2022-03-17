@@ -1,0 +1,36 @@
+@import "../../styles/variables";
+.doctorPersonalInformation {
+    .infoHeader {
+        h3 {
+            font-size: 24px;
+            font-weight: 500;
+            color: map-get($theme-colors, headingColor);
+        }
+        .editIcon {
+            width: 24px;
+            cursor: pointer;
+        }
+    }
+    .doctorSpeciality {
+        h6 {
+            color: map-get($theme-colors, primary);
+            font-size: 14px;
+            padding: 7px 12px 6px;
+            background-color: #ecfbfc;
+        }
+    }
+    .listItems {
+        h5 {
+            font-size: 18px;
+            font-weight: 600;
+            color: map-get($theme-colors, headingColor);
+        }
+        .listItemIcon {
+            width: 24px;
+        }
+        p {
+            margin-bottom: 0px;
+            font-size: 14px;
+        }
+    }
+}

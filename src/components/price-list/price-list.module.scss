@@ -1,0 +1,51 @@
+@import "../../styles/variables";
+@import "../../styles/forms.scss";
+.serviceItem {
+    box-shadow: 0 0 10px 0 #c2c2c2;
+    border-radius: 7px;
+    min-height: 270px;
+    height: 100%;
+    &.serviceAdd {
+        cursor: pointer;
+        img {
+            width: 60px;
+            margin: 0 auto;
+        }
+        h2 {
+            width: 125px;
+            font-size: 30px;
+        }
+    }
+    h3 {
+        padding: 10px 0px;
+        font-size: 20px;
+        font-weight: 600;
+        color: map-get($theme-colors, primary);
+    }
+    h4 {
+        background-color: #ecfbfc;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 15px 50px;
+        display: inline-block;
+        @media (max-width: 1400px) {
+            padding: 15px 30px;
+        }
+    }
+    h6 {
+        span {
+            font-size: 12px;
+        }
+    }
+    .serviceItemContent {
+        padding: 0px 30px;
+    }
+    .actionBtn {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        img {
+            width: 17px;
+        }
+    }
+}

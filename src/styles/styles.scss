@@ -1,0 +1,451 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import 'bootstrap/scss/bootstrap.scss';
+@import 'react-toastify/scss/main.scss';
+@import 'react-bootstrap-typeahead/css/Typeahead.scss';
+@import './variables';
+@import './forms.scss';
+// General Styles
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+p {
+  color: map-get($theme-colors, primaryTextColor);
+}
+
+.btn-primary {
+  background-color: map-get($theme-colors, primary);
+  border-color: map-get($theme-colors, primary);
+  min-width: 150px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.btn-secondary {
+  background-color: #e4e6eb;
+  border-color: #e4e6eb;
+  color: #08051b;
+  min-width: 150px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus {
+  background-color: map-get($theme-colors, secondary);
+  border-color: map-get($theme-colors, secondary);
+  box-shadow: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: map-get($theme-colors, secondary);
+  border-color: map-get($theme-colors, secondary);
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  color: map-get($theme-colors, primaryTextColor);
+  background-color: transparent;
+}
+
+.btn:focus,
+.btn.focus {
+  outline: 0;
+  box-shadow: none !important;
+}
+
+.progress {
+  height: 0.35rem;
+  margin: 10px 0px;
+}
+
+// Custom Scrollbar
+::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px map-get($theme-colors, primary);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: map-get($theme-colors, primary);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #02d2d2;
+}
+
+// General Form Style
+// .custom-control-label {
+//   margin-bottom: 15px;
+// }
+// .custom-control-input:checked ~ .custom-control-label::before {
+//   border-color: map-get($theme-colors, primary);
+//   background-color: map-get($theme-colors, primary);
+// }
+.was-validated .form-control:invalid:focus,
+.form-control.is-invalid:focus {
+  box-shadow: none !important;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus {
+  color: map-get($theme-colors, primary);
+  background-color: #ffffff;
+  border-color: transparent;
+  position: relative;
+}
+
+.nav-tabs .nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background-color: map-get($theme-colors, primary);
+}
+
+.container-wrapper {
+  padding: 0px 15%;
+  @media (max-width: 1680px) {
+    padding: 0px 10%;
+  }
+  @media (max-width: 1400px) {
+    padding: 0px 5%;
+  }
+  @media (max-width: 1100px) {
+    padding: 0px 10%;
+  }
+  @media (max-width: 900px) {
+    padding: 0px 5%;
+  }
+  @media (max-width: 767px) {
+    padding: 0px 0%;
+  }
+}
+
+.content-wrapper {
+  padding-left: 315px;
+  background: #f5f6f8;
+  min-height: 100vh;
+  padding-bottom: 1px;
+  @media (max-width: 900px) {
+    padding-left: 15px;
+  }
+}
+
+.content-body {
+  background: #ffffff;
+  // min-height: 100vh;
+  box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+// Sidebar Menu
+.sidebar-menu {
+  a {
+    font-size: 18px;
+    color: map-get($theme-colors, primaryTextColor);
+    padding: 0px 0px;
+    margin-bottom: 40px;
+    span {
+      background-image: url('../assets/images/sidebar-icons/default-icon.svg');
+      background-size: 40px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      padding: 5px 16px;
+      margin-right: 10px;
+      &.dashboard {
+        background-image: url('../assets/images/sidebar-icons/dashboard.svg');
+      }
+      &.agenda {
+        background-image: url('../assets/images/sidebar-icons/calendar.svg');
+      }
+      &.patients {
+        background-image: url('../assets/images/sidebar-icons/patient.svg');
+      }
+      &.consultations {
+        background-image: url('../assets/images/sidebar-icons/consultations.svg');
+      }
+      &.reports {
+        background-image: url('../assets/images/sidebar-icons/reports.svg');
+      }
+      &.my-profile {
+        background-image: url('../assets/images/sidebar-icons/my-profile.svg');
+      }
+      &.logout {
+        background-image: url('../assets/images/sidebar-icons/logout.svg');
+      }
+    }
+    &:hover,
+    &.active {
+      border-right: 4px solid map-get($theme-colors, primary);
+      color: map-get($theme-colors, primary) !important;
+      span {
+        &.dashboard {
+          background-image: url('../assets/images/sidebar-icons/dashboard-active.svg');
+        }
+        &.agenda {
+          background-image: url('../assets/images/sidebar-icons/calendar-active.svg');
+        }
+        &.patients {
+          background-image: url('../assets/images/sidebar-icons/patient-active.svg');
+        }
+        &.consultations {
+          background-image: url('../assets/images/sidebar-icons/consultations-active.svg');
+        }
+        &.reports {
+          background-image: url('../assets/images/sidebar-icons/reports-active.svg');
+        }
+        &.my-profile {
+          background-image: url('../assets/images/sidebar-icons/my-profile-active.svg');
+        }
+        &.logout {
+          background-image: url('../assets/images/sidebar-icons/logout-active.svg');
+        }
+      }
+    }
+  }
+}
+
+.three-dots {
+  .dropdown-toggle {
+    &.btn-link {
+      color: transparent;
+      border: none;
+      &:hover {
+        color: transparent;
+        border: none;
+      }
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 36px;
+      width: 36px;
+      background-image: url('../assets/images/three-dots.png') !important;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      z-index: 99;
+      border-color: transparent !important;
+    }
+  }
+}
+
+// Popup Model Style
+.modal-title {
+  &.h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: map-get($theme-colors, primary);
+    p {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+}
+
+.modal-header {
+  padding: 20px 30px;
+  .close {
+    opacity: 1 !important;
+    span {
+      &:after {
+        content: '';
+        position: absolute;
+        top: 22px;
+        right: 25px;
+        height: 26px;
+        width: 26px;
+        background-image: url('../assets/images/cross-icon-fill.svg') !important;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        z-index: 99;
+        border-color: transparent !important;
+      }
+    }
+  }
+}
+
+.modal-body {
+  padding: 30px 30px 5px;
+}
+
+// Horizontal list items
+.list-group-horizontal {
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0px;
+  .availability-item {
+    border: none;
+    padding: 5px 0px;
+    .form-group {
+      margin-bottom: 0px !important;
+      input {
+        border-bottom: none;
+      }
+    }
+    img {
+      width: 24px;
+    }
+    &:first-child {
+      min-width: 250px;
+      @media (max-width: 900px) {
+        min-width: 225px;
+      }
+    }
+  }
+}
+
+// Progress Bar
+.progress-bar {
+  background-color: map-get($theme-colors, primary);
+}
+
+//autocomplete addrress list
+.pac-container {
+  z-index: 1200 !important;
+}
+
+span.chip {
+  color: map-get($theme-colors, primary) !important;
+  background: #e7f4ff !important;
+  border-radius: 3px;
+  i {
+    font-size: 15px;
+    color: #fa021b !important;
+  }
+}
+
+.show-btn {
+  font-size: 14px;
+  cursor: pointer;
+  color: map-get($theme-colors, primaryTextColor) !important;
+  img {
+    width: 16px !important;
+    margin-right: 10px;
+  }
+}
+
+// Multi select animation
+#allergies_input {
+  position: relative;
+}
+
+.displayNone {
+  display: none !important;
+}
+
+// Caledar Style
+.react-calendar__tile {
+  // margin: 8px 0px !important;
+  // border-radius: 99px;
+  padding: 16px 0px !important;
+  @media (max-width: 1440px) {
+    padding: 10px 0px !important;
+  }
+}
+
+.react-calendar__tile--active {
+  background-color: #ecfbfc !important;
+  color: map-get($theme-colors, headingColor) !important;
+}
+
+.react-calendar__tile--active.react-calendar__tile--now {
+  background-color: #00c2cb !important;
+  color: map-get($theme-colors, buttonTextColor) !important;
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: #003399 !important;
+  color: map-get($theme-colors, buttonTextColor) !important;
+}
+
+.react-calendar {
+  width: 400px !important;
+  border: none !important;
+  padding: 20px 20px;
+  border-radius: 20px;
+  background-color: #f8f9fe !important;
+}
+
+.react-calendar__navigation button {
+  font-size: 32px;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: transparent !important;
+}
+
+.react-calendar__navigation__label__labelText--from {
+  font-size: 20px;
+  font-weight: 500;
+  color: #272d3b;
+  font-family: 'Poppins', sans-serif;
+}
+
+.react-calendar__navigation__prev2-button,
+.react-calendar__navigation__next2-button {
+  display: none;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  color: #9a9a9a;
+  font-size: 14px;
+}
+
+abbr[title],
+abbr[data-original-title] {
+  text-decoration: none !important;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  border-color: #00c2cb;
+  background-color: #00c2cb;
+}

@@ -1,0 +1,43 @@
+@import "../../styles/variables";
+.topBar {
+    padding: 25px 0px;
+    margin-bottom: 10px;
+    .activeUser {
+        span {
+            width: 40px;
+            height: 40px;
+            border-radius: 99px;
+            overflow: hidden;
+        }
+        button {
+            background: transparent !important;
+            color: #000000 !important;
+            border-color: transparent !important;
+            padding: 15px 10px !important;
+            min-width: 100px !important;
+            margin-right: 15px;
+        }
+        .dropdownItem {
+            padding: 15px 35px 15px 15px;
+            color: map-get($theme-colors, primaryTextColor);
+            .linkIcon {
+                width: 24px;
+            }
+            a {
+                color: map-get($theme-colors, primaryTextColor);
+            }
+        }
+    }
+    .notifications {
+        .notificationsAlert {
+            width: 10px;
+            height: 10px;
+            border-radius: 99px;
+            position: absolute;
+            top: 3px;
+            right: 5px;
+            z-index: 9;
+            background: #d38610;
+        }
+    }
+}

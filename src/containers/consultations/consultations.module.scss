@@ -1,0 +1,40 @@
+@import "../../styles/variables";
+
+.dashboard {
+  .welcomeBox {
+    @media (min-width: 1680px) {
+      padding-right: 5%;
+    }
+    h1 {
+      font-size: 36px;
+    }
+  }
+  .reportStats {
+    .reportsIcon {
+      box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.16);
+      padding: 10px;
+      border-radius: 10px;
+      background-color: #ffffff;
+      max-width: 75px;
+      margin: 0 auto;
+    }
+    .reportStatsItems {
+      max-width: 250px;
+      text-align: left;
+      margin: 0 auto;
+      .counts {
+        font-size: 18px;
+        font-weight: 600;
+        min-width: 40px;
+        display: inline-block;
+        color: map-get($theme-colors, primary);
+      }
+    }
+  }
+  .appointmentsHeader {
+    .addIcon {
+      width: 40px;
+      cursor: pointer;
+    }
+  }
+}

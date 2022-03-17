@@ -1,0 +1,13 @@
+@import '../../styles/variables';
+.agenda {
+  .currentDate {
+    color: map-get($theme-colors, primary);
+    font-size: 18px;
+  }
+  .appointmentsHeader {
+    .addIcon {
+      width: 40px;
+      cursor: pointer;
+    }
+  }
+}

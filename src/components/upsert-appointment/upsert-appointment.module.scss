@@ -1,0 +1,96 @@
+@import "../../styles/variables";
+
+.upsertAppointment {
+  .appointmentTypeItem {
+    border: 1px solid;
+    border-color: map-get($theme-colors, primary);
+    color: map-get($theme-colors, primary);
+    cursor: pointer;
+    &.selected {
+      background-color: map-get($theme-colors, primary);
+      color: #ffffff;
+    }
+    &:hover {
+      background-color: map-get($theme-colors, primary);
+      color: #ffffff;
+    }
+    img {
+      width: 40px;
+      background-color: map-get($theme-colors, primary);
+      padding: 5px;
+    }
+    h6 {
+      padding: 0px 10px;
+      @media (max-width: 1400px) {
+        font-size: 14px;
+      }
+    }
+  }
+  input[type="radio"] {
+    display: none !important;
+  }
+  h4 {
+    color: map-get($theme-colors, primary);
+  }
+  .newPatient {
+    color: map-get($theme-colors, primary);
+  }
+  .appointmentTimeItems {
+    span {
+      color: map-get($theme-colors, primaryTextColor);
+      padding: 12px 10px 8px;
+      border-radius: 5px;
+      border: solid 0.5px #f7f7fc;
+      background-color: #f7f7fc;
+      width: 15.8%;
+      display: inline-block;
+      text-transform: uppercase;
+      @media (max-width: 1680px) {
+        width: 15.7%;
+      }
+      @media (max-width: 1600px) {
+        width: 18.8%;
+      }
+      @media (max-width: 1400px) {
+        width: 18.7%;
+        font-size: 14px;
+      }
+
+      &.selected {
+        background-color: map-get($theme-colors, primary);
+        border-color: map-get($theme-colors, primary);
+        color: #ffffff;
+      }
+      
+      &:hover {
+        background-color: map-get($theme-colors, primary);
+        border-color: map-get($theme-colors, primary);
+        color: #ffffff;
+        cursor: pointer;
+      }
+    }
+    &.scheduleTime {
+      span {
+        background: #ecfbfc;
+        border-color: #ecfbfc;
+        &:hover {
+          background-color: map-get($theme-colors, primary);
+          border-color: map-get($theme-colors, primary);
+          color: #ffffff;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .patientInfo {
+    img {
+      width: 24px;
+    }
+    .patientInfoItem {
+      &:last-child {
+        border-bottom-width: 1px;
+      }
+    }
+  } 
+
+}

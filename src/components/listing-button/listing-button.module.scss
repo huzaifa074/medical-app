@@ -1,0 +1,30 @@
+@import "../../styles/variables";
+
+.listingButton {
+  padding: 6px 15px;
+  border-radius: 6px;
+  background-color: #ecfbfc;
+  transition: all 0.3s ease;
+  .title {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: map-get($theme-colors, primaryTextColor);
+    &:hover {
+      color: map-get($theme-colors, headingColor);
+    }
+  }
+  .cancelIcon {
+    width: 20px;
+    opacity: 0;
+    display: inline-block;
+  }
+  &:hover {
+    cursor: pointer;
+    // padding: 10px 15px;
+    .cancelIcon {
+      transition: all 1s ease;
+      opacity: 1;
+    }
+  }
+}

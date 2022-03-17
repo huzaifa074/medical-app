@@ -1,0 +1,21 @@
+.patientProfileCard {
+    .editIcon {
+        width: 18px;
+        cursor: pointer;
+    }
+    .patientProfileImage {
+        max-width: 150px;
+    }
+    .patientDetails {
+        h6 {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1;
+            color: #455a64;
+            margin-bottom: 3px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+}

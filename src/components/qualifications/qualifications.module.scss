@@ -1,0 +1,87 @@
+.qualifications {
+  .qualificationAddBtn {
+    background: #fafafa;
+    cursor: pointer;
+    width: 100%;
+    img {
+      width: 30px;
+    }
+    .btnIcon {
+      padding: 12px 15px;
+      background: #878888;
+    }
+    h6 {
+      margin-bottom: 0;
+      display: block;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  .qualificationsContent {
+    img {
+      width: 100px;
+      border-right: 1px solid #bbbdc2;
+    }
+    .qualificationsContentBody {
+      p {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .editIcon {
+    width: 24px;
+    cursor: pointer;
+  }
+  .error-text {
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 80%;
+    color: #dc3545;
+  }
+}
+
+//multiselect style
+.multiSelectDropdown {
+  .chips {
+    background: '#00c2cb';
+    color: '#111111';
+  }
+  .searchBox {
+    border: 'none';
+    border-bottom: '1px solid #00c2cb';
+    border-radius: '0px';
+  }
+  .multiselectContainer {
+    color: '#fffff';
+  }
+}
+
+.modal {
+  width: 1020px;
+  max-width: 1120px;
+}
+
+.content {
+  padding: 64px 50px 65px 100.8px;
+}
+
+.bsHeader {
+  border: none;
+  padding-bottom: 0px;
+}
+
+.bsTitle {
+  height: 63px;
+  margin: 0px auto;
+  margin-bottom: 91px;
+  object-fit: contain;
+  font-family: Poppins;
+  font-size: 45px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #262125;
+}

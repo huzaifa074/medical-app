@@ -1,0 +1,49 @@
+@import '../../styles/variables';
+
+.backIcon {
+  width: 50px;
+  height: 25px;
+  cursor: pointer;
+}
+.tabItems {
+  a {
+    font-size: 18px;
+    font-weight: 500;
+    color: map-get($theme-colors, primaryTextColor);
+    padding: 10px 0px 3px;
+    margin: 0px 35px 0px 0px;
+  }
+}
+.formLabel {
+  color: map-get($theme-colors, primary);
+}
+.appointmentTypeItem {
+  border: 1px solid;
+  border-color: map-get($theme-colors, primary);
+  color: map-get($theme-colors, primary);
+  cursor: pointer;
+  border-radius: 5px;
+  &.selected {
+    background-color: map-get($theme-colors, primary);
+    color: #ffffff;
+  }
+  &:hover {
+    background-color: map-get($theme-colors, primary);
+    color: #ffffff;
+  }
+  img {
+    width: 40px;
+    background-color: map-get($theme-colors, primary);
+    padding: 5px;
+  }
+  h6 {
+    padding: 0px 10px;
+    @media (max-width: 1400px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.space{
+  margin-bottom: 20px;
+}

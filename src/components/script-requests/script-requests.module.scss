@@ -1,0 +1,25 @@
+.scriptRequests {
+  .scriptRequestItem {
+    .userAvatar {
+      width: 45px;
+    }
+    h5 {
+      font-size: 18px;
+    }
+    .actionBtns {
+      box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.16);
+      border-radius: 8px;
+      span {
+        padding: 6px 10px;
+        display: inline-block;
+        img {
+          width: 18px;
+        }
+        &:first-child{
+          border-right: 1px solid #707070;
+        }
+      }
+
+    }
+  }
+}

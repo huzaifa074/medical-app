@@ -1,0 +1,16 @@
+@import "../../../styles/variables";
+@import "../../../styles/forms.scss";
+
+.forgotPassword {
+  a {
+    color: map-get($theme-colors, primaryTextColor);
+    font-size: 14px;
+    &:hover {
+      color: map-get($theme-colors, primary);
+    }
+  }
+}
+
+.loggedIn {
+  font-size: 14px;
+}

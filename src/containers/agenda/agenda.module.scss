@@ -1,0 +1,69 @@
+@import "../../styles/variables";
+.agenda {
+    .currentDate {
+        color: map-get($theme-colors, primary);
+        font-family: Poppins;
+        font-size: 26px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+     
+    }
+    .appointmentsHeader {
+        width: 100%;
+        .addIcon {
+            width: 40px;
+            cursor: pointer;
+        }
+    }
+}
+.container{
+    max-width: 1550px;
+    margin: 0 auto;
+    border-radius: 10px;
+  box-shadow: 0 3px 15px 0 rgba(38, 33, 37, 0.63);
+  width: 100%;
+.calender{
+position: relative;
+.flex{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 80px;
+    border-radius: 25px;
+    background-color: #CDF0F2;
+    z-index: 9999;
+    max-width: 90%;
+    width: 100%;
+    /* justify-content: space-around; */
+    left: 5%;
+   
+.button{
+    width: 200px;
+    height: 48px;
+    // padding: 11.6px 67.4px 12.4px 59.6px;
+    padding: 11px 0px;
+    border-radius: 25px;
+    background-color:  map-get($theme-colors, primary);
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+
+}
+.focusButton{
+    width: 200px;
+    height: 48px;
+    padding: 11px 0px;
+    border-radius: 25px;
+    text-align: center;
+    color: #000;
+    cursor: pointer;
+}
+
+
+}
+}

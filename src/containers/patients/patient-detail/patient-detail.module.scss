@@ -1,0 +1,138 @@
+@import '../../../styles/variables';
+
+.patientDetails {
+  .patientTitle {
+    font-size: 24px;
+    vertical-align: top;
+    img {
+      width: 24px;
+    }
+    .patientStatus {
+      border: 1px solid #008000;
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-size: 14px;
+      margin-left: 20px;
+      color: #008000;
+      &.inActive {
+        color: #f44336;
+        border: 1px solid #f44336;
+      }
+    }
+  }
+  .space {
+    padding-right: 20px;
+    margin-bottom: 20px;
+  }
+  .tabItems {
+    background-color: transparent !important;
+    a {
+      color: map-get($theme-colors, headingColor) !important;
+      font-size: 20px;
+      font-weight: 500;
+      padding: 15px 30px;
+    }
+  }
+  .progressBar {
+    height: 0.35rem;
+    margin: 10px 0px;
+    > div {
+      background-color: map-get($theme-colors, red);
+    }
+  }
+  .tabItemContent {
+    background: transparent;
+    // .active {
+    //   background-color: #ecfbfc !important;
+    // }
+    // a {
+    //   background-color: #fafafa;
+    // }
+    // a:active {
+    //   background-color: #ecfbfc !important;
+    //   color: #00c2cb;
+    //   ::after {
+    //     background-color: white !important;
+    //   }
+    // }
+    // a:focus {
+    //   background-color: #ecfbfc !important;
+    //   color: #00c2cb;
+    // }
+    // a:hover {
+    //   background-color: #ecfbfc !important;
+    //   color: #00c2cb;
+    // }
+    // // a:first-child {
+    // //   background-color: #ecfbfc;
+    // // }
+    // a:last-child {
+    //   width: 74%;
+    // }
+    .spacing {
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+  }
+
+  .medicalSchema {
+    height: 240px;
+    padding: 38.5px 34px 55px;
+    border-radius: 10px;
+    box-shadow: 5px 3px 18px 0 rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+    h3 {
+      font-family: Poppins;
+      font-size: 18px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #000;
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    .row {
+      display: flex;
+      justify-content: space-between;
+      margin: 30px auto;
+      width: 250px;
+      max-width: 250px;
+      .button1 {
+        object-fit: contain;
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+      }
+      .button2 {
+        object-fit: contain;
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        border-color: #00c2cb;
+        color: #00c2cb;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.active {
+  color: #00c2cb;
+  background-color: #ecfbfc !important;
+  border-color: transparent;
+  position: relative;
+}

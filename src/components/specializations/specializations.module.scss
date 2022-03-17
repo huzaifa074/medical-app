@@ -1,0 +1,38 @@
+.specializations {
+    .specializationsContent {
+        img {
+            width: 100px;
+            border-right: 1px solid #bbbdc2;
+        }
+        .specializationsContentBody {
+            p {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .editIcon {
+        width: 24px;
+        cursor: pointer;
+    }
+    //multiselect style
+}
+
+//multiselect style
+.multiSelectDropdown {
+    .chips {
+        background: '#00c2cb';
+        color: '#111111';
+    }
+    .searchBox {
+        border: 'none';
+        border-bottom: '1px solid #00c2cb';
+        border-radius: '0px';
+    }
+    .multiselectContainer {
+        color: '#fffff';
+    }
+}
+
+.searchBox#css_custom_input::placeholder {
+    color: red;
+}

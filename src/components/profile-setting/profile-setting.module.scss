@@ -1,0 +1,168 @@
+@import '../../styles/variables';
+@import '../../styles/forms.scss';
+.subsrption {
+  width: 306px;
+  height: 190px;
+  margin: 51.8px 13px 0 0;
+  padding: 20px 15.5px 40px 19px;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+  .headingRow {
+    display: flex;
+    justify-content: right;
+    .heading {
+      height: 28px;
+
+      font-family: Poppins;
+      font-size: 20px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+    }
+    .icon {
+      width: 14px;
+      height: 14px;
+      margin: 6.5px 0 10px 22.5px;
+      object-fit: contain;
+    }
+  }
+  .iconRow {
+    display: flex;
+    justify-content: right;
+    .icon {
+      width: 14px;
+      height: 14px;
+      margin: 6.5px 0 10px 22.5px;
+      object-fit: contain;
+    }
+  }
+
+  .visaRow {
+    .visa {
+      width: 46px;
+      height: 31px;
+      margin: 21.5px 3.5px 13px 0;
+      padding: 6px 5px 5px 8px;
+      background-color: #ecfbfc;
+
+      font-family: Poppins;
+      font-size: 14px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #043481;
+    }
+    .visaNumber {
+      width: 165px;
+      height: 31px;
+      margin: 21.5px 43px 13px 3.5px;
+      padding: 6px 20.5px 5px 15.5px;
+      border-radius: 4px;
+      background-color: #fafafa;
+    }
+  }
+
+  .expires {
+    width: 167px;
+    height: 20px;
+    margin: 13px 70px 0px 75px;
+
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #00c2cb;
+  }
+}
+
+.account {
+  width: 450px;
+  height: 190px;
+  margin: 51.8px 6px 0 13px;
+  // padding: 20px 34.3px 30.5px;
+  border-radius: 5px;
+  background-color: #fafafa;
+  .heading {
+    height: 28px;
+    margin: 20px 100px 34px 130px;
+    width: 180px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #878888;
+  }
+  .btnRow {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    .btn1 {
+      width: 200px;
+      height: 35px;
+      margin: 0px 6.8px 6.5px 0;
+      padding: 5px 19.2px 5px 15.5px;
+      border-radius: 4px;
+      background-color: rgba(135, 136, 136, 0.65);
+      border: none;
+      cursor: pointer;
+    }
+    .btn2 {
+      width: 160px;
+      height: 35px;
+      margin: 0px 6.8px 6.5px 0;
+      padding: 4.7px 15.5px 5.3px 16.5px;
+      border-radius: 4px;
+      background-color: rgba(135, 136, 136, 0.65);
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.authorisation {
+  width: 450px;
+  height: 190px;
+  margin: 51.8px 0 0 6px;
+  padding: 8.5px 7.3px 10px 10px;
+  background-color: #fafafa;
+  .iconRow {
+    display: flex;
+    justify-content: right;
+    .icon {
+      width: 14px;
+      height: 14px;
+      margin: 6.5px 0 10px 22.5px;
+      object-fit: contain;
+      cursor: pointer;
+    }
+  }
+  .heading {
+    width: 150px;
+    height: 28px;
+    margin: 7px auto 40.5px auto;
+
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #878888;
+  }
+}

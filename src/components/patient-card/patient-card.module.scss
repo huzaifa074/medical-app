@@ -1,0 +1,104 @@
+@import '../../styles/variables';
+
+.patientCard {
+  .patientsListItem {
+    border-radius: 5px;
+    background-color: #fafafa;
+    height: 350px;
+    padding: 25px;
+    box-shadow: 1px 8px 10px 0 #dbdbdb;
+
+    .patientAvatar {
+      border-radius: 99px;
+      overflow: hidden;
+      width: 90px;
+      height: 90px;
+      object-fit: contain;
+      margin-top: 5px;
+      margin-bottom: 25px;
+    }
+    .patientInfo {
+      h4 {
+        font-size: 18px;
+        font-weight: 600;
+        color: map-get($theme-colors, headingColor);
+      }
+      img {
+        width: 24px;
+      }
+    }
+    .profileStatus {
+      h6 {
+        font-size: 16px;
+        font-weight: 500;
+        color: map-get($theme-colors, primaryTextColor);
+      }
+      p {
+        font-size: 14px;
+        color: map-get($theme-colors, primary);
+      }
+
+      .progressBar {
+        height: 0.35rem;
+        margin: 10px 0px;
+        > div {
+          background-color: map-get($theme-colors, primary);
+        }
+      }
+      .progressBarRed {
+        height: 0.35rem;
+        margin: 10px 0px;
+        > div {
+          background-color: #fa021b;
+        }
+      }
+      .progressBarOrange {
+        height: 0.35rem;
+        margin: 10px 0px;
+        > div {
+          background-color: #e68a0c;
+        }
+      }
+      .progressBarGreen {
+        height: 0.35rem;
+        margin: 10px 0px;
+        > div {
+          background-color: #008000;
+        }
+      }
+
+      .textRed {
+        color: #fa021b;
+      }
+      .textOrange {
+        color: #e68a0c;
+      }
+      .textGreen {
+        color: #008000;
+      }
+      &.statusInactive {
+        .progressBar {
+          > div {
+            background-color: #fa021b;
+          }
+        }
+
+        p {
+          color: #fa021b;
+        }
+      }
+    }
+    .actionBtn {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      a {
+        color: map-get($theme-colors, primaryTextColor);
+        padding: 10px 35px 10px 15px;
+      }
+      img {
+        width: 28px;
+      }
+    }
+  }
+}

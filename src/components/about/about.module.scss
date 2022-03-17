@@ -1,0 +1,85 @@
+@import '../../styles/variables';
+.about {
+  .aboutMe {
+    img {
+      width: 20px;
+    }
+    .title {
+      font-size: 18px;
+      font-weight: 500;
+      color: #959393;
+    }
+    .aboutMeContent {
+      label {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        background: #fafafa;
+        width: 96%;
+      }
+      textarea {
+        padding: 50px 15px 15px;
+        border: none;
+        background: #fafafa;
+        border-radius: 4px;
+        &:focus {
+          background: #ffffff;
+          box-shadow: 0 1px 3px 0 #00c2cb;
+          ~ label {
+            background-color: #ffffff;
+            color: #00c2cb;
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  img {
+    width: 14px;
+  }
+  .title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #959393;
+  }
+  .fieldItem {
+    label {
+      position: absolute;
+      top: 15px;
+      left: 30px;
+      background: #fafafa;
+      margin-bottom: 0;
+    }
+    input {
+      padding: 60px 15px 25px 40px;
+      border: none;
+      background: #fafafa;
+      &:focus {
+        background: #ffffff;
+        box-shadow: none;
+        ~ label {
+          background-color: #ffffff;
+          display: block;
+        }
+      }
+    }
+  }
+  .qualificationAddBtn {
+    background: #fafafa;
+    cursor: pointer;
+    img {
+      width: 30px;
+    }
+    .btnIcon {
+      padding: 12px 15px;
+      background: #878888;
+    }
+    h6 {
+      margin-bottom: 0;
+      display: block;
+      text-align: center;
+      width: 100%;
+    }
+  }
+}

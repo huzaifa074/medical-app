@@ -1,0 +1,39 @@
+.qualificationsListItems {
+  td {
+    border-top: none !important;
+
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #9a9a9a !important;
+    .indexcolor {
+      color: #9a9a9a;
+    }
+  }
+  th {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #878888;
+  }
+  .editIcon {
+    width: 16px;
+    cursor: pointer;
+  }
+  .addIcon {
+    width: 24px;
+  }
+}
+.tableheaderColor {
+  color: #0ac4cd !important;
+}

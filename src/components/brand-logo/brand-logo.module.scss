@@ -1,0 +1,6 @@
+@import "../../styles/variables";
+
+.brandLogo {
+  padding: 15px 50px 15px;
+  border-bottom: 3px solid map-get($theme-colors, primary);
+}

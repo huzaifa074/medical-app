@@ -1,0 +1,17 @@
+.downArrowIcon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 16px;
+}
+
+.scheduleItem {
+    cursor: pointer;
+    label {
+        text-transform: capitalize;
+    }
+}
+
+.addMoreSchedule {
+    width: 22px;
+}

@@ -1,0 +1,17 @@
+.insurances {
+    .insurancesContent {
+        img {
+            width: 100px;
+            border-right: 1px solid #bbbdc2;
+        }
+        .insurancesContentBody {
+            p {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .editIcon {
+        width: 24px;
+        cursor: pointer;
+    }
+}

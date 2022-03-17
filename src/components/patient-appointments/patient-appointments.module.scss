@@ -1,0 +1,120 @@
+@import '../../styles/variables';
+
+.patientAppointments {
+  margin-bottom: 0px;
+  // overflow: hidden;
+  // &:hover {
+  //   overflow: scroll;
+  // }
+  // background-color: black;
+  th {
+    padding-top: 0px !important;
+  }
+  th,
+  td {
+    border-top: none;
+    padding: 30px 60px 0px 0px;
+    vertical-align: middle;
+    &.patientInfo {
+      min-width: 40px;
+      .patientInfoItem {
+        position: relative;
+        &:before {
+          content: '';
+          position: absolute;
+          top: 3px;
+          left: -15px;
+          width: 6px;
+          height: 100%;
+          background: #dbdfdf;
+          border-radius: 10px;
+        }
+      }
+      h5 {
+        font-size: 18px;
+        margin-bottom: 3px;
+      }
+    }
+    &.statusBox {
+      min-width: 175px;
+      padding-right: 0px;
+      width: 160px !important;
+      min-width: 160px;
+    }
+    dd {
+      margin-bottom: 0px;
+    }
+  }
+  thead {
+    th {
+      border-bottom: none;
+      font-size: 18px;
+      font-weight: 500;
+      color: map-get($theme-colors, primaryTextColor);
+    }
+  }
+  .appointmentDate {
+    dd {
+      font-size: 20px;
+      font-weight: 500;
+      color: #9a9a9a;
+      &.date {
+        font-size: 26px;
+        font-weight: bold;
+        color: #000;
+      }
+    }
+  }
+
+  .doctorAvatar {
+    width: 50px;
+    border-radius: 10px;
+  }
+  .consultationType {
+    width: 36px;
+  }
+  .appointmentStatus {
+    position: relative;
+    padding: 9px 35px 8px 30px;
+    border-radius: 5px;
+    background-color: #ebecec;
+    &.statusPending {
+      background-color: #ecfbfc;
+    }
+    &.statusNext {
+      background-color: #72bffd;
+    }
+    &.statusRefered {
+      background-color: #caf2f2;
+    }
+    &.statusReschedule {
+      background-color: #d8d2f7;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background: #f9c1c1;
+      width: 10px;
+      height: 10px;
+      border-radius: 99px;
+    }
+  }
+  .consultationDetails {
+    width: 35px;
+  }
+  .actionBtn {
+    position: absolute;
+    top: 38px;
+    right: 70px;
+    a {
+      color: map-get($theme-colors, primaryTextColor);
+      padding: 10px 35px 10px 15px;
+    }
+    img {
+      width: 28px;
+    }
+  }
+}

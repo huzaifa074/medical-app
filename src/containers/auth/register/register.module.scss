@@ -1,0 +1,17 @@
+@import "../../../styles/variables";
+@import "../../../styles/forms.scss";
+.termsPolicyBox {
+    label {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+    .termsPolicy {
+        position: absolute;
+        top: 2px;
+        left: 112px;
+        font-size: 13px;
+        a {
+            color: map-get($theme-colors, secondary);
+        }
+    }
+}

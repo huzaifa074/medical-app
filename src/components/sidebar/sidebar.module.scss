@@ -1,0 +1,16 @@
+.sidebar {
+  background: #ffffff;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  display: block;
+  overflow-y: auto;
+  width: 100%;
+  max-width: 300px;
+  padding-right: 0;
+  padding-left: 0;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  @media (max-width: 900px) {
+    display: none;
+  }
+}

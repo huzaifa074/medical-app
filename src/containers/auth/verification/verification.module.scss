@@ -1,0 +1,25 @@
+@import "../../../styles/variables";
+@import "../../../styles/forms.scss";
+
+.verificationCodeFields {
+  width: 50px;
+  color: map-get($theme-colors, primary);
+  text-align: center;
+  @media (max-width: 767px) {
+    width: 40px;
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  background-image: none !important;
+}
+
+.inValid{
+  padding: none !important;
+  border: 1px solid red;
+}
+
+p.Link {
+  cursor: pointer;
+  color: map-get($theme-colors, primary);
+}

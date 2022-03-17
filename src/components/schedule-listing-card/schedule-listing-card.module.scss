@@ -1,0 +1,57 @@
+@import "../../styles/variables";
+.scheduleListingCard {
+    .scheduleItems {
+        span {
+            padding: 8px 5px 7px;
+            border-radius: 5px;
+            border: solid 0.5px #9a9a9a;
+            width: 92px;
+            display: inline-block;
+            text-transform: uppercase;
+            margin: 0px 3px;
+            @media (max-width: 1680px) {
+                width: 92px;
+            }
+            @media (max-width: 1600px) {
+                width: 86px;
+            }
+            @media (max-width: 1440px) {
+                width: 70px;
+            }
+            @media (max-width: 1400px) {
+                width: 66.5px;
+            }
+            @media (max-width: 1366px) {
+                width: 64px;
+            }
+            &.selected {
+                background-color: map-get($theme-colors, primary);
+                border-color: map-get($theme-colors, primary);
+                color: #ffffff;
+            }
+            &:hover {
+                background-color: map-get($theme-colors, primary);
+                border-color: map-get($theme-colors, primary);
+                color: #ffffff;
+                cursor: pointer;
+            }
+        }
+        &.scheduleTime {
+            span {
+                background: #ecfbfc;
+                border-color: #ecfbfc;
+                font-size: 14px;
+                font-weight: 600;
+                @media (max-width: 1680px) {
+                    font-size: 11px;
+                }
+                &:hover {
+                    background-color: map-get($theme-colors, primary);
+                    border-color: map-get($theme-colors, primary);
+                    color: #ffffff;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+@import "../../styles/variables";
+.locations {
+    .locationNotFound {
+        h4 {
+            color: map-get($theme-colors, primaryTextColor);
+            cursor: pointer;
+        }
+        .addLocation {
+            width: 60px;
+            cursor: pointer;
+        }
+    }
+    .addMoreLocation {
+        img {
+            width: 24px;
+        }
+        span {
+            color: map-get($theme-colors, primary);
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
+    .editSchedule {
+        color: map-get($theme-colors, primary);
+        cursor: pointer;
+        img {
+            width: 18px;
+        }
+    }
+    .locationListItem {
+        img {
+            width: 30px;
+            cursor: pointer;
+            &.editIcon {
+                width: 18px;
+            }
+        }
+        p {
+            line-height: 1.8;
+        }
+        h6 {
+            color: map-get($theme-colors, primary);
+            cursor: pointer;
+        }
+    }
+}

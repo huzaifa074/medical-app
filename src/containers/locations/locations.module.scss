@@ -1,0 +1,31 @@
+@import '../../styles/variables';
+
+.locations {
+  .locationNotFound {
+    h4 {
+      color: map-get($theme-colors, primary);
+      cursor: pointer;
+    }
+  }
+  .editSchedule {
+    color: map-get($theme-colors, primary);
+    img {
+      width: 18px;
+    }
+  }
+
+  .locationListItem {
+    img {
+      width: 32px;
+    }
+    p {
+      max-width: 260px;
+      font-size: 20px;
+      line-height: 1.8;
+    }
+    h6 {
+      color: map-get($theme-colors, primary);
+    }
+  }
+}
+

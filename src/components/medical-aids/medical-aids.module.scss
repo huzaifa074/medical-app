@@ -1,0 +1,108 @@
+@import "../../styles/variables";
+.medicalAids {
+    .paginationArrows {
+        .arrowIcons {
+            width: 18px;
+        }
+    }
+    .searchBar {
+        min-width: 300px;
+        @media (max-width: 1366px) {
+            min-width: 275px;
+        }
+        input {
+            padding: 10px 15px;
+            height: 46px;
+            border-radius: 10px;
+            width: 100%;
+            font-size: 16px;
+        }
+        button {
+            min-width: 60px;
+            position: absolute;
+            top: 0;
+            right: 1px;
+            height: 45px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            img {
+                max-width: 24px !important;
+            }
+        }
+    }
+    .addMedicalAid {
+        width: 36px;
+        cursor: pointer;
+    }
+    .aidListItem {
+        @media (max-width: 1440px) {
+            flex: 0 0 33.3333% !important;
+            max-width: 33.3333% !important;
+        }
+        @media (max-width: 1100px) {
+            flex: 0 0 50% !important;
+            max-width: 50% !important;
+        }
+        @media (max-width: 767px) {
+            flex: 0 0 100% !important;
+            max-width: 100% !important;
+        }
+    }
+    .medicalAidItem {
+        box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.1);
+        background: #fafafa;
+        border-radius: 5px;
+        padding: 20px 10px;
+        position: relative;
+        height: 100%;
+        .listItemIcon {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            background-color: rgba(135, 136, 136, 0.1);
+            background-image: url("../../assets/images/insurance-icon.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        .medicalAidItemTitle {
+            font-size: 14px;
+        }
+        .deleteIcon {
+            width: 14px;
+            position: absolute;
+            top: 3px;
+            right: 5px;
+            display: none;
+        }
+        &:hover {
+            box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.16);
+            background: #ffffff;
+            .deleteIcon {
+                display: block;
+                cursor: pointer;
+                z-index: 99;
+            }
+            .listItemIcon {
+                background-image: url("../../assets/images/insurance-icon-active.svg");
+            }
+        }
+    }
+    .notFound {
+        h4 {
+            color: map-get($theme-colors, primaryTextColor);
+        }
+        .addBtnIcon {
+            width: 60px;
+            cursor: pointer;
+        }
+    }
+    .viewBtn {
+        color: map-get($theme-colors, primary);
+    }
+}
+.bottoms{
+position:absolute;
+bottom:1px;
+width:100%;
+}

@@ -1,0 +1,47 @@
+@import '../../styles/variables';
+
+.dividerText {
+  position: relative;
+  top: -14px;
+  padding: 0px 10px;
+  color: #00c2cb;
+}
+span {
+  color: map-get($theme-colors, primary);
+  cursor: pointer;
+}
+.cancelIcon {
+  .editIcon {
+    width: 16px;
+    cursor: pointer;
+  }
+}
+.addIcon {
+  width: 24px;
+}
+.modal {
+  width: 1100px;
+  max-width: 1115px;
+}
+.bsHeader {
+  border: none;
+}
+.content {
+  border-radius: 14px;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.14);
+  padding-bottom: 40px;
+}
+.uploadImages {
+  visibility: hidden;
+}
+.uploadButton {
+  width: 300px;
+  height: 80px;
+  background-color: #f0fbfc;
+  color: #00c2cb;
+  border-radius: 16px;
+  &:hover {
+    background-color: #00c2cb;
+    border-color: #00c2cb;
+  }
+}
